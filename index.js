@@ -4,19 +4,6 @@ let driver = new webdriver.Builder()
     .forBrowser('firefox')
     .build();
 
-
-async function getElementByClass( className ){
-
-    var ret = await driver.findElement( webdriver.By.className(className) );
-    return ret
-}
-
-async function getElementByxPath( path ){
-
-    var ret = await driver.findElement( webdriver.By.xpath(path) );
-    return ret
-}
-
 const VERSION = "1.0.0"
 const FILEPATH = "TARGET ZIP FILE.";
 const STEAM_USER = "STEAM ACCOUNT NAME";
